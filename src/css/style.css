@@ -1,0 +1,88 @@
+
+        .firstContainer > ul{
+            border: 1px solid black;
+            background-color: darkred;
+            color: aliceblue;
+            padding-top: 20px;
+            list-style: none;
+            display: flex;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            a:link{
+                color: white;
+            }
+        }
+        .mainDiv{
+            display: flex;
+            background-color: blanchedalmond;
+        }
+
+       .div1{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .div2{
+            margin-left:20px;
+        }
+
+        .mainLi {
+            margin-right: 1000px;
+            font-size: large;
+        }
+        li {
+               margin: 0 10px;
+        }
+        .secondContainer {
+            padding-left: 700px;
+
+        }
+        .thirdContainer {
+            display: flex;
+            justify-content: space-around;
+
+            .div3_1 {
+                border: 1px solid gainsboro;
+                width: 200px;
+            }
+
+            .div3_2 {
+                border: 1px solid gainsboro;
+                width: 200px;
+            }
+
+            .div3_3 {
+                border: 1px solid gainsboro;
+                width: 200px;
+            }
+
+            .div3_4 {
+
+                border: 1px solid gainsboro;
+                width: 200px;
+            }
+            .button1{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .button2{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .button3{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .button4{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+
+
+
+
