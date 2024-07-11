@@ -65,20 +65,27 @@
                 width: 200px;
             }
             .button1{
+                margin-left: 75px;
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
             .button2{
+                margin-left: 75px;
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
             .button3{
+                margin-left: 75px;
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
             .button4{
+                margin-left: 75px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+            }
+            button{
+                background-color: burlywood;
             }
         }
 
