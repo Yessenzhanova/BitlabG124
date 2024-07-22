@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("Enter number")*1
+    let mas = []
+    let check = false
+
+    for (let i = 0; i < n; i++) {
+        mas[i]= prompt("Enter number")*1
+    }
+
+    let m = prompt("Enter number2")*1
+
+    for (let i = 0; i< mas.length; i++) {
+        if (mas[i] === m) {
+            alert("Yes" + " " + i)
+            check  = true
+        }
+    }
+    if(!check) alert("No")
+</script>
+</body>
+</html>

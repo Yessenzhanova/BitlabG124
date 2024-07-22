@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name = 1
+    let year = 2
+    let volume = 3
+    let price = 4
+    let exit = 5
+    let search_name = prompt("Enter name")
+    let search_year = prompt("Enter year")*1
+    let search_volume = prompt("Enter volume")
+    let search_price = prompt("Enter price")
+    let search_price2 = prompt("Enter price2")
+
+    cars = [
+
+        {"name":"Toyota", "price": 12000000, "year": 2015, "volume": 2.2},
+
+        {"name":"Mercedes", "price": 70000000, "year": 2018, "volume": 3.8},
+
+        {"name":"Toyota", "price": 7000000, "year": 2013, "volume": 2.0},
+
+        {"name":"BMW", "price": 11000000, "year": 2011, "volume": 3.0},
+
+        {"name":"Lexus", "price": 60000000, "year": 2017 ,"volume": 5.7}
+
+    ];
+
+    var text = "";
+
+    for(var i=0;i<cars.length;i++){
+
+        text+=cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+
+    }
+    alert(text);
+
+    if(name == 1)
+
+</script>
+
+</body>
+</html>

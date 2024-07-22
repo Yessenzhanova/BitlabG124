@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt() * 1
+    let mas = []
+    let i = 0
+    let mult = 1
+
+    while (number !== 0) {
+        mas[i] = number
+        number = prompt() * 1
+        i++
+    }
+
+    for (let m of mas) {
+        mult *= m
+    }
+    alert(Math.pow(mult, 1/mas.length).toFixed(3))
+</script>
+</body>
+</html>

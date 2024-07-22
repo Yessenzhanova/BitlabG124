@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const USD = 380
+    const EUR = 430
+    const GBP = 480
+    let sum = parseFloat(prompt("Enter your cash"))
+    let currencyNumber = parseInt(prompt("Enter your currency number"))
+
+    if(currencyNumber == 1){
+        result = sum/USD
+    }else if(currencyNumber == 2){
+        result = sum/EUR
+    }else if (currencyNumber == 3){
+        result = sum/GBP
+    }
+    alert(result.toFixed(2))
+
+
+</script>
+</body>
+</html>

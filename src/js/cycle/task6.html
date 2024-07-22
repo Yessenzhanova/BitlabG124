@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let books = [
+        {"author":"Лев Толстой","title":"Война и мир","price": "8000$"},
+        {"author":"Джордж Оруэлл","title":"1994","price": "7000$"},
+        {"author":"Владимир Набоков","title":"Лолита","price": "5000$"},
+        {"author":"Лев Толстой","title":"Гордость и предубеждение","price": "6000$"},
+        {"author":"Маргарет Митчелл","title":"Унесенные ветром","price": "9000$"}
+    ]
+    let author = prompt("Enter author")
+    let cheсk = false
+    for(let book of books) {
+        if (book.author === author) {
+            alert(`Title: ${book.title}, Author: ${book.author}, Price: ${book.price}`)
+            cheсk = true
+        }
+    }
+       alert("Not found")
+</script>
+</body>
+</html>

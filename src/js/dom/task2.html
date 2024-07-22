@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .Input1 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" id="btn" value="+"  onclick="addElement()">
+    <span id="count">0</span>
+    <input type="button" id="btn2" value="-"  onclick="minElement()">
+
+<script>
+
+    let count = 0
+
+    function addElement(){
+        let a = document.getElementById("btn")
+       count++
+        updateDisplay()
+    }
+    function minElement(){
+        let b = document.getElementById("btn2")
+        count--
+        updateDisplay()
+    }
+
+    function updateDisplay() {
+        document.getElementById("count").innerText = count; // Обновляем отображение счетчика
+    }
+</script>
+</body>
+</html>

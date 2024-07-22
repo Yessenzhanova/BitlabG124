@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+LOGIN: <input type="text" id="log"> <br>
+PASSWORD: <input type="password" id="pas"> <br>
+<button onclick="check()">SIGN IN</button>
+
+<script>
+    function check() {
+        let login = log.value;
+        let password =pas.value;
+
+        if (login === 'Ilyas' && password === 'qwerty') {
+            document.body.innerHTML= "<h1>You are authenticated</h1>"
+        } else {
+            check_red();
+        }
+    }
+
+    function check_red() {
+        let login1 = log
+        let password1 =pas
+
+        login1.style.border = '1px solid red'
+        password1.style.border = '1px solid red'
+    }
+</script>
+</body>
+</html>

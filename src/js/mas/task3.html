@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Enter number")*1
+    let mas = []
+    let i = 0
+
+    while (number !== 0) {
+        mas[i] = number
+        number = prompt() * 1
+        i++
+    }
+    let positiveNumbers = mas.filter(num => num > 0)
+    if(positiveNumbers.length>0){
+        alert(positiveNumbers)
+    }else {
+        alert("NO")
+    }
+
+
+</script>
+
+</body>
+</html>

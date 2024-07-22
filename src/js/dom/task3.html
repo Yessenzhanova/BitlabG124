@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <label for="cardNumber">Номер карты:</label>
+    <input type="text" id="cardNumber">
+</div>
+<div>
+    <label for="fullName">Имя и Фамилия:</label>
+    <input type="text" id="fullName">
+</div>
+<div>
+    <label for="cvv">Номер CVV кода:</label>
+    <input type="text" id="cvv">
+</div>
+<button onclick="check()">Проверить транзакцию</button>
+<div id="message"></div>
+
+<script>
+    let users = [
+        { cardNumber: '4413434135342424', fullName: 'John Serikov', cvv: '123' },
+        { cardNumber: '4413434135342425', fullName: 'Serik Serikov', cvv: '124' },
+        { cardNumber: '4413434135342426', fullName: 'John Berikov', cvv: '125' },
+        { cardNumber: '4413434135342427', fullName: 'Berik Serikov', cvv: '126' },
+
+    ]
+
+    function check(){
+        let cardNumber = document.getElementById("cardNumber").value
+        let fullName = document.getElementById("fullName").value
+        let cvv = document.getElementById("cvv").value
+
+    let userEnter = false
+    for(let user of users) {
+        if (user.cardNumber === cardNumber && user.cvv === cvv ){
+            userEnter = true
+            document.getElementById("message").innerHTML = "<h4>Transaction completed</h4>"
+            break
+        }
+    }
+
+    if(!userEnter){
+        alert("Invalid Data")
+    }
+  }
+</script>
+
+</body>
+</html>

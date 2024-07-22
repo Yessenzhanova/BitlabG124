@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            NAME:
+        </td>
+        <td>
+            <input type="text" id ="name">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SURNAME:
+        </td>
+        <td>
+            <input type="text" id="clintsurname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            COUNTRY:
+        </td>
+        <td>
+            <select style="width: 170px" id="city">
+                <option>Almaty</option>
+                <option>Astana</option>
+                <option>Karaganda</option>
+                <option>Shymkent</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            phone number
+        </td>
+        <td>
+            <input type="text" id="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button style="background: black; color: white">REGISTER</button>
+        </td>
+        <td>
+            <button onclick="save()" style="background-color: gray; color: white">SAVE TO DRAFT</button>
+        </td>
+    </tr>
+</table>
+<script>
+    name.value= localStorage.getItem('name')
+    surname.value = localStorage.getItem('s')
+    city.value = localStorage.getItem('country')
+    number.value = localStorage.getItem('phone number')
+
+    function save (){
+        localStorage.setItem('name', name.value())
+        localStorage.setItem('surname',
+        localStorage.setItem('country', city.value())
+        localStorage.setItem('phone number', number.value())
+    }
+
+</script>
+</body>
+</html>
+
